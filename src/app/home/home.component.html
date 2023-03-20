@@ -1,0 +1,26 @@
+                                                  <!-- Image -->
+<div style="background-color: gray;"><div
+    class=" w-full">
+    <div
+      class=" float-left -mr-[100%] w-full">
+      <img
+        src="assets/home.jpeg"
+        class="block w-full"
+        alt="Wild Landscape" />
+    </div>
+
+
+
+
+                                                <!-- Products -->
+<div style="padding-top: 35%;"></div>
+<div  class="container mx-auto">
+  <div class="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-5 gap-6">
+    <div *ngFor="let product of productscopy index as i" class="flex justify-center text-6xl border-2 border-gray-300 rounded-xl p-6 bg-gray-800">
+      <a routerLink="product"><app-products [place]='home' [name]="product.name" [desc]="product.description" [img]="product.image" [id]="product.id"></app-products>
+      </a>
+    </div>
+    
+  </div>
+</div>
+</div>

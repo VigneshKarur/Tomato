@@ -1,0 +1,20 @@
+<div class="bg"><br>
+  <h1 class="text-white text-3xl text-center font-bold">இழிவறிந்து உண்பான்கண் இன்பம்போல் நிற்கும் <br>
+    கழிபேர் இரையான்கண் நோய்.</h1><br>
+    <h2 style="margin-left:60%" class="font-bold">-Thirukkural</h2>
+   <br> <h4 class=" text-2xl text-center">(Eat Healthy and Live long  ||  Don't Waste Food)</h4>
+<br>
+<button style="float: right; margin-right: 5%;"class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">
+  <a routerLink="/checkout">Checkout</a>
+</button>
+  <br><br>  
+    <div  class="container mx-auto">
+      <div class="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-5 gap-6">
+        <div *ngFor="let product of productscopy index as i" class="flex justify-center text-6xl border-2 border-gray-300 rounded-xl p-6 bg-gray-800">
+          <app-products [name]="product.name" [desc]="product.description" [img]="product.image" [id]="product.id"></app-products>
+
+        </div>
+        
+      </div>
+    </div>
+  </div>
